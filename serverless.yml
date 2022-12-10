@@ -10,14 +10,8 @@ provider:
 
 # functions
 functions:
-  hello:
-    handler: src/functions/hello.handler
-    events: # The events that trigger this function
-      - http:
-          path: example/hello
-          method: get
   bye:
-    handler: src/functions/bye.handler
+    handler: src/functions/bye.handleBye
     events:
       - http:
           path: example/bye
